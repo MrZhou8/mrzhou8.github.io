@@ -71,7 +71,7 @@ function csv2Json(csv) {
         }
     });
 }
-readWorkbookFromRemoteFile("http://file.mrzhou.icu/file/excel/资源共享.xlsx", function callback(workbook) {
+readWorkbookFromRemoteFile("https://zjlloveo0.github.io/share/pass/file/excel/资源共享.xlsx", function callback(workbook) {
     var sheetNames = workbook.SheetNames; // 工作表名称集合
     var worksheet = workbook.Sheets[sheetNames[0]]; // 这里我们只读取第1张sheet
     var csv = XLSX.utils.sheet_to_csv(worksheet);
